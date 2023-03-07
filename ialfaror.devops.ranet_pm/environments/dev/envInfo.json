@@ -1,0 +1,17 @@
+{
+    "name": "dev",
+    "propertyName": "dev.ialfaror.devops.ranet_pm",
+    "groupId": 229585,
+    "isSecure": true,
+    "propertyId": 894285,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "ialfaror",
+        "updatedDate": "2023-03-07T04:25:59Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2022-06-28"
+    },
+    "suggestedRuleFormat": "v2022-06-28"
+}

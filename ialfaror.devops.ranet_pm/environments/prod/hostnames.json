@@ -1,0 +1,8 @@
+[
+    {
+        "cnameFrom": "prod.ialfaror.devops.ranet_pm",
+        "cnameTo": "prod.ialfaror.devops.ranet_pm.edgekey.net",
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": null
+    }
+]

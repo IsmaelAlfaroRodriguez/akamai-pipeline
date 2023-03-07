@@ -1,0 +1,57 @@
+{
+    "rules": {
+        "name": "default",
+        "children": [
+            "#include:CP_codes.json",
+            "#include:Default_Caching.json",
+            "#include:Remove_Vary_Header.json",
+            "#include:Routing.json",
+            "#include:Block_By_Header.json",
+            "#include:Akamaizer.json"
+        ],
+        "behaviors": [
+            {
+                "name": "origin",
+                "options": {
+                    "originType": "CUSTOMER",
+                    "forwardHostHeader": "REQUEST_HOST_HEADER",
+                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                    "compress": true,
+                    "enableTrueClientIp": true,
+                    "trueClientIpHeader": "True-Client-IP",
+                    "trueClientIpClientSetting": false,
+                    "verificationMode": "CUSTOM",
+                    "originSni": true,
+                    "httpPort": 80,
+                    "httpsPort": 443,
+                    "hostname": "${env.originHostname}",
+                    "originCertificate": "",
+                    "ports": "",
+                    "customValidCnValues": [
+                        "{{Origin Hostname}}",
+                        "{{Forward Host Header}}"
+                    ],
+                    "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
+                    "standardCertificateAuthorities": [
+                        "akamai-permissive"
+                    ],
+                    "ipVersion": "IPV4"
+                }
+            }
+        ],
+        "uuid": "default",
+        "options": {
+            "is_secure": true
+        },
+        "variables": [
+            {
+                "name": "PMUSER_RANDOMORIGIN",
+                "value": "",
+                "description": "Select a random number for Origin Routing Logic",
+                "hidden": false,
+                "sensitive": false
+            }
+        ],
+        "comments": ""
+    }
+}
