@@ -1,0 +1,4 @@
+[2023-03-07T22:32:59.075] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-03-07T22:32:59.077] [INFO] devops-prov.factory - Using credentials file: '/Users/ialfaror/.edgerc', section: 'papi'
+[2023-03-07T22:33:09.704] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2023-03-07T22:33:09.705] [INFO] devops-prov.factory - Using credentials file: '/Users/ialfaror/.edgerc', section: 'papi'

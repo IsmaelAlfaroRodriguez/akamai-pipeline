@@ -1,4 +1,8 @@
 {
-    "originHostname": "origin-dev.ialfaror.devops.ranet_pm",
-    "cpCode": null
+    "originHostname": "dev.default.ialfaror.training.ranet.me",
+    "cpCode": null,
+    "ttl":"1s",
+    "fileExtension": ["js", "css"],
+    "originHostnameGreen": "dev.green.ialfaror.training.ranet.me",
+    "originHostnameBlue": "dev.blue.ialfaror.training.ranet.me"
 }

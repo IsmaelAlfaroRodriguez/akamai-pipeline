@@ -1,0 +1,26 @@
+{
+    "name": "Caching",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "MAX_AGE",
+                "mustRevalidate": false,
+                "ttl": "${env.ttl}"
+            }
+        }
+    ],
+    "criteria": [        
+        {
+            "name": "fileExtension",
+            "options": {
+                "matchOperator": "IS_ONE_OF",
+                "matchCaseSensitive": false,
+                "values": "${env.fileExtension}"
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all",
+    "comments": ""
+}

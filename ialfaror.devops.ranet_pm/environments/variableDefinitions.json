@@ -2,10 +2,26 @@
     "definitions": {
         "originHostname": {
             "type": "hostname",
-            "default": null
+            "default": "default.ialfaror.training.ranet.me"
         },
         "cpCode": {
             "type": "cpCode",
+            "default": 1430518
+        },
+        "ttl": {
+            "type": "ttl",
+            "default": null
+        },
+        "fileExtension": {
+            "type": "fileExtension",
+            "default": null
+        },
+        "originHostnameGreen": {
+            "type": "hostname",
+            "default": null
+        },
+        "originHostnameBlue": {
+            "type": "hostname",
             "default": null
         }
     }

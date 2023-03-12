@@ -1,8 +1,9 @@
 [
     {
-        "cnameFrom": "dev.ialfaror.devops.ranet_pm",
-        "cnameTo": "dev.ialfaror.devops.ranet_pm.edgekey.net",
         "cnameType": "EDGE_HOSTNAME",
-        "edgeHostnameId": null
+        "edgeHostnameId": 1039711,
+        "cnameFrom": "dev.ialfaror.training.ranet.me",
+        "cnameTo": "rolotest1.crtestns.com.edgekey.net",
+        "certProvisioningType": "CPS_MANAGED"
     }
 ]

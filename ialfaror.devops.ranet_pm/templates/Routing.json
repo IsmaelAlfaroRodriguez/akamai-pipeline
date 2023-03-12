@@ -19,7 +19,7 @@
                         "originSni": true,
                         "httpPort": 80,
                         "httpsPort": 443,
-                        "hostname": "${env.originHostname}",
+                        "hostname": "${env.originHostnameGreen}",
                         "originCertificate": "",
                         "ports": "",
                         "customValidCnValues": [
@@ -67,7 +67,7 @@
                         "originSni": true,
                         "httpPort": 80,
                         "httpsPort": 443,
-                        "hostname": "${env.originHostname}",
+                        "hostname": "${env.originHostnameBlue}",
                         "originCertificate": "",
                         "ports": "",
                         "customValidCnValues": [
@@ -167,7 +167,7 @@
                                 "originSni": true,
                                 "httpPort": 80,
                                 "httpsPort": 443,
-                                "hostname": "${env.originHostname}",
+                                "hostname": "${env.originHostnameGreen}",
                                 "originCertificate": "",
                                 "ports": "",
                                 "customValidCnValues": [
@@ -216,7 +216,7 @@
                                 "originSni": true,
                                 "httpPort": 80,
                                 "httpsPort": 443,
-                                "hostname": "${env.originHostname}",
+                                "hostname": "${env.originHostnameBlue}",
                                 "originCertificate": "",
                                 "ports": "",
                                 "customValidCnValues": [
@@ -298,7 +298,7 @@
                                 "originSni": true,
                                 "httpPort": 80,
                                 "httpsPort": 443,
-                                "hostname": "${env.originHostname}",
+                                "hostname": "${env.originHostnameGreen}",
                                 "originCertificate": "",
                                 "ports": "",
                                 "customValidCnValues": [
@@ -347,7 +347,7 @@
                                 "originSni": true,
                                 "httpPort": 80,
                                 "httpsPort": 443,
-                                "hostname": "${env.originHostname}",
+                                "hostname": "${env.originHostnameBlue}",
                                 "originCertificate": "",
                                 "ports": "",
                                 "customValidCnValues": [

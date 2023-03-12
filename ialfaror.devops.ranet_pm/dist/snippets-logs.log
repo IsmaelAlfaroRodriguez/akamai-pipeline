@@ -1,0 +1,1071 @@
+[2023-03-07T22:56:34.243] [INFO] devops-prov.factory - Switching account key to: '1-6JHGX'
+[2023-03-07T22:56:34.244] [INFO] devops-prov.factory - Switching account key to: '1-6JHGX'
+[2023-03-07T22:56:34.244] [INFO] devops-prov.factory - Using credentials file: '/Users/ialfaror/.edgerc', section: 'papi'
+[2023-03-07T22:56:34.245] [INFO] devops-prov.factory - need to create papi
+[2023-03-07T22:56:34.246] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2023-03-07T22:56:34.249] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:34+0000;nonce=67d51bf3-3e63-4a37-8ce1-889901861d3d;
+
+[2023-03-07T22:56:34.249] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"dev.ialfaror.devops.ranet_pm"}"
+[2023-03-07T22:56:34.249] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 47
+[2023-03-07T22:56:34.249] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"dev.ialfaror.devops.ranet_pm"}"
+[2023-03-07T22:56:34.249] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"dev.ialfaror.devops.ranet_pm"}
+[2023-03-07T22:56:34.250] [INFO] devops-prov.edgegrid.helpers - Content hash is "LhSkbtIFA0Dnxaka6bnDNbdWCYJEXQASRX7JHxGHvxE="
+[2023-03-07T22:56:34.250] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=1-6JHGX		LhSkbtIFA0Dnxaka6bnDNbdWCYJEXQASRX7JHxGHvxE=	EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:34+0000;nonce=67d51bf3-3e63-4a37-8ce1-889901861d3d;" 
+
+[2023-03-07T22:56:34.250] [INFO] devops-prov.edgegrid.helpers - Signing key: VHqnuG0DOgi7VEUFQfE8E3iaMljvLBRTn6DPoDRM7hQ=
+
+[2023-03-07T22:56:34.250] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:34+0000;nonce=67d51bf3-3e63-4a37-8ce1-889901861d3d;signature=RN/F04bBKDL7ROa+h1tQ8F9wJf+3Dak44L5+V1TVBKs=
+
+[2023-03-07T22:56:34.265] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=1-6JHGX',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:34+0000;nonce=67d51bf3-3e63-4a37-8ce1-889901861d3d;signature=RN/F04bBKDL7ROa+h1tQ8F9wJf+3Dak44L5+V1TVBKs=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net',
+    'content-length': 47
+  },
+  body: '{"propertyName":"dev.ialfaror.devops.ranet_pm"}'
+}
+[2023-03-07T22:56:36.727] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '839d1a8e-69a7-4d7b-b448-cb8ff69b5f2a, 839d1a8e-69a7-4d7b-b448-cb8ff69b5f2a',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept-encoding',
+    'x-trace-id': '96416408158313e1',
+    'content-length': '463',
+    date: 'Wed, 08 Mar 2023 04:56:36 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_1-6JHGX",\n' +
+    '      "contractId" : "ctr_1-1NC95D",\n' +
+    '      "assetId" : "aid_11132537",\n' +
+    '      "groupId" : "grp_229585",\n' +
+    '      "propertyId" : "prp_894285",\n' +
+    '      "propertyName" : "dev.ialfaror.devops.ranet_pm",\n' +
+    '      "propertyVersion" : 1,\n' +
+    '      "updatedByUser" : "ialfaror",\n' +
+    '      "updatedDate" : "2023-03-07T04:25:59Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-07T22:56:36.728] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-07T22:56:36.728] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_1-6JHGX",
+      "contractId" : "ctr_1-1NC95D",
+      "assetId" : "aid_11132537",
+      "groupId" : "grp_229585",
+      "propertyId" : "prp_894285",
+      "propertyName" : "dev.ialfaror.devops.ranet_pm",
+      "propertyVersion" : 1,
+      "updatedByUser" : "ialfaror",
+      "updatedDate" : "2023-03-07T04:25:59Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE"
+    } ]
+  }
+}
+[2023-03-07T22:56:36.729] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/894285/versions/1
+[2023-03-07T22:56:36.730] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:36+0000;nonce=a8b9261c-55cc-480f-9a1b-55edc19214f0;
+
+[2023-03-07T22:56:36.730] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-07T22:56:36.730] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-07T22:56:36.730] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/894285/versions/1?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:36+0000;nonce=a8b9261c-55cc-480f-9a1b-55edc19214f0;" 
+
+[2023-03-07T22:56:36.730] [INFO] devops-prov.edgegrid.helpers - Signing key: CNZdYiXmMnft3NXSuXqGXJam/pO3SmelIR2lnhHHHlA=
+
+[2023-03-07T22:56:36.730] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:36+0000;nonce=a8b9261c-55cc-480f-9a1b-55edc19214f0;signature=C9gge9FEtmBv7XIlPW6UALzKln09uiJmx5GxzSB+OwE=
+
+[2023-03-07T22:56:36.731] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/894285/versions/1?accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:36+0000;nonce=a8b9261c-55cc-480f-9a1b-55edc19214f0;signature=C9gge9FEtmBv7XIlPW6UALzKln09uiJmx5GxzSB+OwE=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-07T22:56:37.123] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '839d1a8e-69a7-4d7b-b448-cb8ff69b5f2a, 839d1a8e-69a7-4d7b-b448-cb8ff69b5f2a',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/894285/versions/1?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+    vary: 'accept-encoding',
+    'x-trace-id': '931d6408158411e9',
+    'content-length': '122',
+    date: 'Wed, 08 Mar 2023 04:56:37 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/894285/versions/1?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX"\n' +
+    '}'
+}
+[2023-03-07T22:56:37.124] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:37+0000;nonce=a6e71578-59c8-436d-ae85-66a3c2d16d06;
+
+[2023-03-07T22:56:37.125] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2023-03-07T22:56:37.125] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2023-03-07T22:56:37.125] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/894285/versions/1?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:37+0000;nonce=a6e71578-59c8-436d-ae85-66a3c2d16d06;" 
+
+[2023-03-07T22:56:37.125] [INFO] devops-prov.edgegrid.helpers - Signing key: uqtEOiA/Mn9O0sjq00vMPAyYiihv3pftXO9bunIonys=
+
+[2023-03-07T22:56:37.125] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:37+0000;nonce=a6e71578-59c8-436d-ae85-66a3c2d16d06;signature=vid2eQFVBlYji8LZqsZCx2Ebsnvqyu1yMwxS9pl1+KI=
+
+[2023-03-07T22:56:37.126] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/894285/versions/1?groupId=229585&contractId=1-1NC95D&accountSwitchKey=1-6JHGX',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:37+0000;nonce=a6e71578-59c8-436d-ae85-66a3c2d16d06;signature=vid2eQFVBlYji8LZqsZCx2Ebsnvqyu1yMwxS9pl1+KI=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net'
+  }
+}
+[2023-03-07T22:56:38.259] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '5d7d2a3a-3ac1-45f8-8bc6-b5b418d4927f, 5d7d2a3a-3ac1-45f8-8bc6-b5b418d4927f',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': '93296408158511ec',
+    'content-length': '568',
+    date: 'Wed, 08 Mar 2023 04:56:38 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_894285",\n' +
+    '  "propertyName" : "dev.ialfaror.devops.ranet_pm",\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "assetId" : "aid_11132537",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 1,\n' +
+    '      "updatedByUser" : "ialfaror",\n' +
+    '      "updatedDate" : "2023-03-07T04:25:59Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "c0bf406b9c8330045d106e7a3f78087ee451dc91",\n' +
+    '      "productId" : "prd_Fresca",\n' +
+    '      "ruleFormat" : "v2022-06-28"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2023-03-07T22:56:38.260] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-07T22:56:38.260] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_894285",
+  "propertyName" : "dev.ialfaror.devops.ranet_pm",
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "assetId" : "aid_11132537",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 1,
+      "updatedByUser" : "ialfaror",
+      "updatedDate" : "2023-03-07T04:25:59Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "c0bf406b9c8330045d106e7a3f78087ee451dc91",
+      "productId" : "prd_Fresca",
+      "ruleFormat" : "v2022-06-28"
+    } ]
+  }
+}
+[2023-03-07T22:56:38.260] [INFO] devops-prov.openclient - Requesting: PUT /papi/v1/properties/prp_894285/versions/1/rules
+[2023-03-07T22:56:38.261] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:38+0000;nonce=ad59af64-5088-4868-994e-526a1148247d;
+
+[2023-03-07T22:56:38.261] [INFO] devops-prov.edgegrid.helpers - Body is "{"rules":{"name":"default","children":[{"name":"CP codes","children":[],"behaviors":[{"name":"cpCode","options":{"value":{"id":1430518}}}],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Default Caching","children":[],"behaviors":[{"name":"caching","options":{"behavior":"NO_STORE"}}],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Remove Vary Header","children":[],"behaviors":[{"name":"removeVary","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Routing","children":[{"name":"Green Origin","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/origin1/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Blue Origin","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/origin2/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Random 1/3","children":[{"name":"default origin","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["1"]}}],"criteriaMustSatisfy":"all","comments":""},{"name":"green","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["2"]}}],"criteriaMustSatisfy":"all","comments":""},{"name":"blue","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["3"]}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[{"name":"setVariable","options":{"valueSource":"GENERATE","transform":"NONE","variableName":"PMUSER_RANDOMORIGIN","generator":"RAND","minRandomNumber":"1","maxRandomNumber":"3"}}],"criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/random/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Random 50/50","children":[{"name":"green","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["1"]}}],"criteriaMustSatisfy":"all","comments":""},{"name":"blue","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["2"]}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[{"name":"setVariable","options":{"valueSource":"GENERATE","transform":"NONE","variableName":"PMUSER_RANDOMORIGIN","generator":"RAND","minRandomNumber":"1","maxRandomNumber":"2"}}],"criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/randomcolor/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Block By Header","children":[{"name":"Authorization Header","children":[],"behaviors":[{"name":"denyAccess","options":{"reason":"denySTGDueAuthorizationHeader","enabled":true}}],"criteria":[{"name":"requestHeader","options":{"matchOperator":"IS_NOT_ONE_OF","matchWildcardName":false,"matchWildcardValue":false,"matchCaseSensitiveValue":true,"headerName":"x-stg-auth","values":["EC1ZDGCTYXV0AA"]}},{"name":"contentDeliveryNetwork","options":{"matchOperator":"IS","network":"STAGING"}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Authentication Header","children":[],"behaviors":[{"name":"denyAccess","options":{"reason":"denyAuthDueHeader","enabled":true}}],"criteria":[{"name":"requestHeader","options":{"matchOperator":"IS_NOT_ONE_OF","matchWildcardName":false,"matchWildcardValue":false,"matchCaseSensitiveValue":true,"headerName":"x-uid","values":["aWFsZmFyb3I="]}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Akamaizer","children":[],"behaviors":[{"name":"advanced","options":{"description":"Akamaizer","xml":"<edgecomputing:processor>\n  <value>akamaizer</value>\n  <allow-akamaizer>on</allow-akamaizer>\n  <status>on</status>\n</edgecomputing:processor>\n<edgecomputing:akamaizer>\n  <tag-filter>\n    <rule>#Request Information#Akamai Details - Headers Received:#</rule>\n    <tags>h1</tags>\n    <onmatch>stop</onmatch>\n    <scope>block</scope>\n    <type>include</type>\n  </tag-filter>\n  <tag-filter>\n    <rule>#Field#Information / Field#</rule>\n    <tags>th</tags>\n    <onmatch>stop</onmatch>\n    <scope>block</scope>\n    <type>include</type>\n  </tag-filter>\n  <tag-filter>\n    <rule>#Value#Information / Value#</rule>\n    <tags>th</tags>\n    <onmatch>stop</onmatch>\n    <scope>block</scope>\n    <type>include</type>\n  </tag-filter>\n</edgecomputing:akamaizer>"},"uuid":"d7b23f94-0921-4e6d-91fb-d769a8f995ac"}],"uuid":"ec146e3c-e74d-412d-9fc9-c4c540d1532e","criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/akamaizer/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Caching","children":[],"behaviors":[{"name":"caching","options":{"behavior":"MAX_AGE","mustRevalidate":false,"ttl":"1s"}}],"criteria":[{"name":"fileExtension","options":{"matchOperator":"IS_ONE_OF","matchCaseSensitive":false,"values":["js","css"]}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"],"ipVersion":"IPV4"}}],"uuid":"default","options":{"is_secure":true},"variables":[{"name":"PMUSER_RANDOMORIGIN","value":"","description":"Select a random number for Origin Routing Logic","hidden":false,"sensitive":false}],"comments":""},"comments":"pipelineCachingUpdate"}"
+[2023-03-07T22:56:38.262] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 10789
+[2023-03-07T22:56:38.262] [INFO] devops-prov.edgegrid.helpers - Data to sign: "PUT	https	akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net	/papi/v1/properties/prp_894285/versions/1/rules?accountSwitchKey=1-6JHGX			EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:38+0000;nonce=ad59af64-5088-4868-994e-526a1148247d;" 
+
+[2023-03-07T22:56:38.262] [INFO] devops-prov.edgegrid.helpers - Signing key: Uj5K4bcwbcbElXltErPallsW9OELA+lLI7zAVAGgMfI=
+
+[2023-03-07T22:56:38.262] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:38+0000;nonce=ad59af64-5088-4868-994e-526a1148247d;signature=tcb6irGSZkwWki8dYpmJIWf3Yz1vI3lbcYrQIcx4G9I=
+
+[2023-03-07T22:56:38.263] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/properties/prp_894285/versions/1/rules?accountSwitchKey=1-6JHGX',
+  method: 'PUT',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-zowd5mhrkxeq2cej-qmbl7holxvmb62qi;access_token=akab-crva743unxpfqri7-4whxoupdleqinpqz;timestamp=20230308T04:56:38+0000;nonce=ad59af64-5088-4868-994e-526a1148247d;signature=tcb6irGSZkwWki8dYpmJIWf3Yz1vI3lbcYrQIcx4G9I=',
+    host: 'akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net',
+    'content-length': 10789
+  },
+  body: '{"rules":{"name":"default","children":[{"name":"CP codes","children":[],"behaviors":[{"name":"cpCode","options":{"value":{"id":1430518}}}],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Default Caching","children":[],"behaviors":[{"name":"caching","options":{"behavior":"NO_STORE"}}],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Remove Vary Header","children":[],"behaviors":[{"name":"removeVary","options":{"enabled":true}}],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Routing","children":[{"name":"Green Origin","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/origin1/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Blue Origin","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/origin2/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Random 1/3","children":[{"name":"default origin","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["1"]}}],"criteriaMustSatisfy":"all","comments":""},{"name":"green","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["2"]}}],"criteriaMustSatisfy":"all","comments":""},{"name":"blue","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["3"]}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[{"name":"setVariable","options":{"valueSource":"GENERATE","transform":"NONE","variableName":"PMUSER_RANDOMORIGIN","generator":"RAND","minRandomNumber":"1","maxRandomNumber":"3"}}],"criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/random/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Random 50/50","children":[{"name":"green","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["1"]}}],"criteriaMustSatisfy":"all","comments":""},{"name":"blue","children":[],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":"REQUEST_HOST_HEADER","cacheKeyHostname":"REQUEST_HOST_HEADER","compress":true,"enableTrueClientIp":true,"trueClientIpHeader":"True-Client-IP","trueClientIpClientSetting":false,"verificationMode":"CUSTOM","originSni":true,"httpPort":80,"httpsPort":443,"hostname":"origin-dev.ialfaror.devops.ranet_pm","originCertificate":"","ports":"","customValidCnValues":["{{Origin Hostname}}","{{Forward Host Header}}"],"originCertsToHonor":"STANDARD_CERTIFICATE_AUTHORITIES","standardCertificateAuthorities":["akamai-permissive"]}}],"criteria":[{"name":"matchVariable","options":{"matchOperator":"IS_ONE_OF","matchWildcard":false,"matchCaseSensitive":true,"variableName":"PMUSER_RANDOMORIGIN","variableValues":["2"]}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[{"name":"setVariable","options":{"valueSource":"GENERATE","transform":"NONE","variableName":"PMUSER_RANDOMORIGIN","generator":"RAND","minRandomNumber":"1","maxRandomNumber":"2"}}],"criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/randomcolor/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Block By Header","children":[{"name":"Authorization Header","children":[],"behaviors":[{"name":"denyAccess","options":{"reason":"denySTGDueAuthorizationHeader","enabled":true}}],"criteria":[{"name":"requestHeader","options":{"matchOperator":"IS_NOT_ONE_OF","matchWildcardName":false,"matchWildcardValue":false,"matchCaseSensitiveValue":true,"headerName":"x-stg-auth","values":["EC1ZDGCTYXV0AA"]}},{"name":"contentDeliveryNetwork","options":{"matchOperator":"IS","network":"STAGING"}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Authentication Header","children":[],"behaviors":[{"name":"denyAccess","options":{"reason":"denyAuthDueHeader","enabled":true}}],"criteria":[{"name":"requestHeader","options":{"matchOperator":"IS_NOT_ONE_OF","matchWildcardName":false,"matchWildcardValue":false,"matchCaseSensitiveValue":true,"headerName":"x-uid","values":["aWFsZmFyb3I="]}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[],"criteria":[],"criteriaMustSatisfy":"all","comments":""},{"name":"Akamaizer","children":[],"behaviors":[{"name":"advanced","options":{"description":"Akamaizer","xml":"<edgecomputing:processor>\\n  <value>akamaizer</value>\\n  <allow-akamaizer>on</allow-akamaizer>\\n  <status>on</status>\\n</edgecomputing:processor>\\n<edgecomputing:akamaizer>\\n  <tag-filter>\\n    <rule>#Request Information#Akamai Details - Headers Received:#</rule>\\n    <tags>h1</tags>\\n    <onmatch>stop</onmatch>\\n    <scope>block</scope>\\n    <type>include</type>\\n  </tag-filter>\\n  <tag-filter>\\n    <rule>#Field#Information / Field#</rule>\\n    <tags>th</tags>\\n    <onmatch>stop</onmatch>\\n    <scope>block</scope>\\n    <type>include</type>\\n  </tag-filter>\\n  <tag-filter>\\n    <rule>#Value#Information / Value#</rule>\\n    <tags>th</tags>\\n    <onmatch>stop</onmatch>\\n    <scope>block</scope>\\n    <type>include</type>\\n  </tag-filter>\\n</edgecomputing:akamaizer>"},"uuid":"d7b23f94-0921-4e6d-91fb-d769a8f995ac"}],"uuid":"ec146e3c-e74d-412d-9fc9-c4c540d1532e","criteria":[{"name":"path","options":{"matchOperator":"MATCHES_ONE_OF","matchCaseSensitive":false,"values":["/akamaizer/"],"normalize":false}}],"criteriaMustSatisfy":"all","comments":""},{"name":"Caching","children":[],"behaviors":[{"name":"caching","options":{"behavior":"MAX_AGE","mustRevalidate":false,"ttl":"1s"}}],"criteria":[{"name":"fileExtension","options":{"matchOperator":"IS_ONE_OF","matchCaseSensitive":false,"values":["js","css"]}}],"criteriaMustSatisfy":"all","comments":""}],"behaviors":[{"name":"origin","options":{"originType":"CUSTOMER","forwardHostHeader":'... 789 more characters
+}
+[2023-03-07T22:56:43.056] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/vnd.akamai.papirules.v2022-06-28+json;charset=UTF-8',
+    'x-ids-session-id': '89776d29-5101-48c1-a8fe-008edcbfc891, 89776d29-5101-48c1-a8fe-008edcbfc891',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-limit-elements-per-property-limit': '3000',
+    'x-limit-elements-per-property-remaining': '2969',
+    'x-limit-max-nested-rules-limit': '6',
+    'x-limit-max-nested-rules-remaining': '4',
+    'content-language': 'en',
+    link: '<https://akab-wij3emw33cjkfby7-krhahg7yi4b52edd.luna.akamaiapis.net/papi/v1/v0/schemas/products/prd_Fresca/v2022-06-28>; rel="describedby"',
+    etag: '"2ceffbb3f4adc36361d7b8bcb997d539b757f1ff"',
+    vary: 'Accept,Accept-Language, Accept-Encoding',
+    'x-trace-id': 'dc566408157e11d2',
+    'content-length': '20359',
+    date: 'Wed, 08 Mar 2023 04:56:43 GMT',
+    connection: 'keep-alive'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_1-6JHGX",\n' +
+    '  "contractId" : "ctr_1-1NC95D",\n' +
+    '  "groupId" : "grp_229585",\n' +
+    '  "propertyId" : "prp_894285",\n' +
+    '  "propertyName" : "dev.ialfaror.devops.ranet_pm",\n' +
+    '  "propertyVersion" : 1,\n' +
+    '  "etag" : "2ceffbb3f4adc36361d7b8bcb997d539b757f1ff",\n' +
+    '  "rules" : {\n' +
+    '    "name" : "default",\n' +
+    '    "children" : [ {\n' +
+    '      "name" : "CP codes",\n' +
+    '      "children" : [ ],\n' +
+    '      "behaviors" : [ {\n' +
+    '        "name" : "cpCode",\n' +
+    '        "options" : {\n' +
+    '          "value" : {\n' +
+    '            "id" : 1430518\n' +
+    '          }\n' +
+    '        }\n' +
+    '      } ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all",\n' +
+    '      "comments" : ""\n' +
+    '    }, {\n' +
+    '      "name" : "Default Caching",\n' +
+    '      "children" : [ ],\n' +
+    '      "behaviors" : [ {\n' +
+    '        "name" : "caching",\n' +
+    '        "options" : {\n' +
+    '          "behavior" : "NO_STORE"\n' +
+    '        }\n' +
+    '      } ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all",\n' +
+    '      "comments" : ""\n' +
+    '    }, {\n' +
+    '      "name" : "Remove Vary Header",\n' +
+    '      "children" : [ ],\n' +
+    '      "behaviors" : [ {\n' +
+    '        "name" : "removeVary",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : true\n' +
+    '        }\n' +
+    '      } ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all",\n' +
+    '      "comments" : ""\n' +
+    '    }, {\n' +
+    '      "name" : "Routing",\n' +
+    '      "children" : [ {\n' +
+    '        "name" : "Green Origin",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "origin",\n' +
+    '          "options" : {\n' +
+    '            "originType" : "CUSTOMER",\n' +
+    '            "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '            "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '            "compress" : true,\n' +
+    '            "enableTrueClientIp" : true,\n' +
+    '            "trueClientIpHeader" : "True-Client-IP",\n' +
+    '            "trueClientIpClientSetting" : false,\n' +
+    '            "verificationMode" : "CUSTOM",\n' +
+    '            "originSni" : true,\n' +
+    '            "httpPort" : 80,\n' +
+    '            "httpsPort" : 443,\n' +
+    '            "hostname" : "origin-dev.ialfaror.devops.ranet_pm",\n' +
+    '            "originCertificate" : "",\n' +
+    '            "ports" : "",\n' +
+    '            "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '            "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '            "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "path",\n' +
+    '          "options" : {\n' +
+    '            "matchOperator" : "MATCHES_ONE_OF",\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "values" : [ "/origin1/" ],\n' +
+    '            "normalize" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : ""\n' +
+    '      }, {\n' +
+    '        "name" : "Blue Origin",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "origin",\n' +
+    '          "options" : {\n' +
+    '            "originType" : "CUSTOMER",\n' +
+    '            "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '            "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '            "compress" : true,\n' +
+    '            "enableTrueClientIp" : true,\n' +
+    '            "trueClientIpHeader" : "True-Client-IP",\n' +
+    '            "trueClientIpClientSetting" : false,\n' +
+    '            "verificationMode" : "CUSTOM",\n' +
+    '            "originSni" : true,\n' +
+    '            "httpPort" : 80,\n' +
+    '            "httpsPort" : 443,\n' +
+    '            "hostname" : "origin-dev.ialfaror.devops.ranet_pm",\n' +
+    '            "originCertificate" : "",\n' +
+    '            "ports" : "",\n' +
+    '            "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '            "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '            "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "path",\n' +
+    '          "options" : {\n' +
+    '            "matchOperator" : "MATCHES_ONE_OF",\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "values" : [ "/origin2/" ],\n' +
+    '            "normalize" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : ""\n' +
+    '      }, {\n' +
+    '        "name" : "Random 1/3",\n' +
+    '        "children" : [ {\n' +
+    '          "name" : "default origin",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n' +
+    '              "trueClientIpClientSetting" : false,\n' +
+    '              "verificationMode" : "CUSTOM",\n' +
+    '              "originSni" : true,\n' +
+    '              "httpPort" : 80,\n' +
+    '              "httpsPort" : 443,\n' +
+    '              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",\n' +
+    '              "originCertificate" : "",\n' +
+    '              "ports" : "",\n' +
+    '              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '              "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteria" : [ {\n' +
+    '            "name" : "matchVariable",\n' +
+    '            "options" : {\n' +
+    '              "matchOperator" : "IS_ONE_OF",\n' +
+    '              "matchWildcard" : false,\n' +
+    '              "matchCaseSensitive" : true,\n' +
+    '              "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '              "variableValues" : [ "1" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteriaMustSatisfy" : "all",\n' +
+    '          "comments" : ""\n' +
+    '        }, {\n' +
+    '          "name" : "green",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n' +
+    '              "trueClientIpClientSetting" : false,\n' +
+    '              "verificationMode" : "CUSTOM",\n' +
+    '              "originSni" : true,\n' +
+    '              "httpPort" : 80,\n' +
+    '              "httpsPort" : 443,\n' +
+    '              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",\n' +
+    '              "originCertificate" : "",\n' +
+    '              "ports" : "",\n' +
+    '              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '              "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteria" : [ {\n' +
+    '            "name" : "matchVariable",\n' +
+    '            "options" : {\n' +
+    '              "matchOperator" : "IS_ONE_OF",\n' +
+    '              "matchWildcard" : false,\n' +
+    '              "matchCaseSensitive" : true,\n' +
+    '              "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '              "variableValues" : [ "2" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteriaMustSatisfy" : "all",\n' +
+    '          "comments" : ""\n' +
+    '        }, {\n' +
+    '          "name" : "blue",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n' +
+    '              "trueClientIpClientSetting" : false,\n' +
+    '              "verificationMode" : "CUSTOM",\n' +
+    '              "originSni" : true,\n' +
+    '              "httpPort" : 80,\n' +
+    '              "httpsPort" : 443,\n' +
+    '              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",\n' +
+    '              "originCertificate" : "",\n' +
+    '              "ports" : "",\n' +
+    '              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '              "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteria" : [ {\n' +
+    '            "name" : "matchVariable",\n' +
+    '            "options" : {\n' +
+    '              "matchOperator" : "IS_ONE_OF",\n' +
+    '              "matchWildcard" : false,\n' +
+    '              "matchCaseSensitive" : true,\n' +
+    '              "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '              "variableValues" : [ "3" ]\n' +
+    '            }\n' +
+    '          } ],\n' +
+    '          "criteriaMustSatisfy" : "all",\n' +
+    '          "comments" : ""\n' +
+    '        } ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "setVariable",\n' +
+    '          "options" : {\n' +
+    '            "valueSource" : "GENERATE",\n' +
+    '            "transform" : "NONE",\n' +
+    '            "variableName" : "PMUSER_RANDOMORIGIN",\n' +
+    '            "generator" : "RAND",\n' +
+    '            "minRandomNumber" : "1",\n' +
+    '            "maxRandomNumber" : "3"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "path",\n' +
+    '          "options" : {\n' +
+    '            "matchOperator" : "MATCHES_ONE_OF",\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "values" : [ "/random/" ],\n' +
+    '            "normalize" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : ""\n' +
+    '      }, {\n' +
+    '        "name" : "Random 50/50",\n' +
+    '        "children" : [ {\n' +
+    '          "name" : "green",\n' +
+    '          "children" : [ ],\n' +
+    '          "behaviors" : [ {\n' +
+    '            "name" : "origin",\n' +
+    '            "options" : {\n' +
+    '              "originType" : "CUSTOMER",\n' +
+    '              "forwardHostHeader" : "REQUEST_HOST_HEADER",\n' +
+    '              "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '              "compress" : true,\n' +
+    '              "enableTrueClientIp" : true,\n' +
+    '              "trueClientIpHeader" : "True-Client-IP",\n' +
+    '              "trueClientIpClientSetting" : false,\n' +
+    '              "verificationMode" : "CUSTOM",\n' +
+    '              "originSni" : true,\n' +
+    '              "httpPort" : 80,\n' +
+    '              "httpsPort" : 443,\n' +
+    '              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",\n' +
+    '              "originCertificate" : "",\n' +
+    '              "ports" : "",\n' +
+    '              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],\n' +
+    '              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",\n' +
+    '              "standardCertificateAuthorities" : [ "akamai-permissive" ]\n' +
+    '   '... 10359 more characters
+}
+[2023-03-07T22:56:43.058] [INFO] devops-prov.openclient - Status code:  200
+[2023-03-07T22:56:43.058] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_1-6JHGX",
+  "contractId" : "ctr_1-1NC95D",
+  "groupId" : "grp_229585",
+  "propertyId" : "prp_894285",
+  "propertyName" : "dev.ialfaror.devops.ranet_pm",
+  "propertyVersion" : 1,
+  "etag" : "2ceffbb3f4adc36361d7b8bcb997d539b757f1ff",
+  "rules" : {
+    "name" : "default",
+    "children" : [ {
+      "name" : "CP codes",
+      "children" : [ ],
+      "behaviors" : [ {
+        "name" : "cpCode",
+        "options" : {
+          "value" : {
+            "id" : 1430518
+          }
+        }
+      } ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : ""
+    }, {
+      "name" : "Default Caching",
+      "children" : [ ],
+      "behaviors" : [ {
+        "name" : "caching",
+        "options" : {
+          "behavior" : "NO_STORE"
+        }
+      } ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : ""
+    }, {
+      "name" : "Remove Vary Header",
+      "children" : [ ],
+      "behaviors" : [ {
+        "name" : "removeVary",
+        "options" : {
+          "enabled" : true
+        }
+      } ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : ""
+    }, {
+      "name" : "Routing",
+      "children" : [ {
+        "name" : "Green Origin",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "origin",
+          "options" : {
+            "originType" : "CUSTOMER",
+            "forwardHostHeader" : "REQUEST_HOST_HEADER",
+            "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+            "compress" : true,
+            "enableTrueClientIp" : true,
+            "trueClientIpHeader" : "True-Client-IP",
+            "trueClientIpClientSetting" : false,
+            "verificationMode" : "CUSTOM",
+            "originSni" : true,
+            "httpPort" : 80,
+            "httpsPort" : 443,
+            "hostname" : "origin-dev.ialfaror.devops.ranet_pm",
+            "originCertificate" : "",
+            "ports" : "",
+            "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+            "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+            "standardCertificateAuthorities" : [ "akamai-permissive" ]
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchOperator" : "MATCHES_ONE_OF",
+            "matchCaseSensitive" : false,
+            "values" : [ "/origin1/" ],
+            "normalize" : false
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      }, {
+        "name" : "Blue Origin",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "origin",
+          "options" : {
+            "originType" : "CUSTOMER",
+            "forwardHostHeader" : "REQUEST_HOST_HEADER",
+            "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+            "compress" : true,
+            "enableTrueClientIp" : true,
+            "trueClientIpHeader" : "True-Client-IP",
+            "trueClientIpClientSetting" : false,
+            "verificationMode" : "CUSTOM",
+            "originSni" : true,
+            "httpPort" : 80,
+            "httpsPort" : 443,
+            "hostname" : "origin-dev.ialfaror.devops.ranet_pm",
+            "originCertificate" : "",
+            "ports" : "",
+            "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+            "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+            "standardCertificateAuthorities" : [ "akamai-permissive" ]
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchOperator" : "MATCHES_ONE_OF",
+            "matchCaseSensitive" : false,
+            "values" : [ "/origin2/" ],
+            "normalize" : false
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      }, {
+        "name" : "Random 1/3",
+        "children" : [ {
+          "name" : "default origin",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "1" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        }, {
+          "name" : "green",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "2" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        }, {
+          "name" : "blue",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "3" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        } ],
+        "behaviors" : [ {
+          "name" : "setVariable",
+          "options" : {
+            "valueSource" : "GENERATE",
+            "transform" : "NONE",
+            "variableName" : "PMUSER_RANDOMORIGIN",
+            "generator" : "RAND",
+            "minRandomNumber" : "1",
+            "maxRandomNumber" : "3"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchOperator" : "MATCHES_ONE_OF",
+            "matchCaseSensitive" : false,
+            "values" : [ "/random/" ],
+            "normalize" : false
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      }, {
+        "name" : "Random 50/50",
+        "children" : [ {
+          "name" : "green",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "1" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        }, {
+          "name" : "blue",
+          "children" : [ ],
+          "behaviors" : [ {
+            "name" : "origin",
+            "options" : {
+              "originType" : "CUSTOMER",
+              "forwardHostHeader" : "REQUEST_HOST_HEADER",
+              "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+              "compress" : true,
+              "enableTrueClientIp" : true,
+              "trueClientIpHeader" : "True-Client-IP",
+              "trueClientIpClientSetting" : false,
+              "verificationMode" : "CUSTOM",
+              "originSni" : true,
+              "httpPort" : 80,
+              "httpsPort" : 443,
+              "hostname" : "origin-dev.ialfaror.devops.ranet_pm",
+              "originCertificate" : "",
+              "ports" : "",
+              "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+              "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+              "standardCertificateAuthorities" : [ "akamai-permissive" ]
+            }
+          } ],
+          "criteria" : [ {
+            "name" : "matchVariable",
+            "options" : {
+              "matchOperator" : "IS_ONE_OF",
+              "matchWildcard" : false,
+              "matchCaseSensitive" : true,
+              "variableName" : "PMUSER_RANDOMORIGIN",
+              "variableValues" : [ "2" ]
+            }
+          } ],
+          "criteriaMustSatisfy" : "all",
+          "comments" : ""
+        } ],
+        "behaviors" : [ {
+          "name" : "setVariable",
+          "options" : {
+            "valueSource" : "GENERATE",
+            "transform" : "NONE",
+            "variableName" : "PMUSER_RANDOMORIGIN",
+            "generator" : "RAND",
+            "minRandomNumber" : "1",
+            "maxRandomNumber" : "2"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchOperator" : "MATCHES_ONE_OF",
+            "matchCaseSensitive" : false,
+            "values" : [ "/randomcolor/" ],
+            "normalize" : false
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : ""
+    }, {
+      "name" : "Block By Header",
+      "children" : [ {
+        "name" : "Authorization Header",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "denyAccess",
+          "options" : {
+            "reason" : "denySTGDueAuthorizationHeader",
+            "enabled" : true
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "requestHeader",
+          "options" : {
+            "matchOperator" : "IS_NOT_ONE_OF",
+            "matchWildcardName" : false,
+            "matchWildcardValue" : false,
+            "matchCaseSensitiveValue" : true,
+            "headerName" : "x-stg-auth",
+            "values" : [ "EC1ZDGCTYXV0AA" ]
+          }
+        }, {
+          "name" : "contentDeliveryNetwork",
+          "options" : {
+            "matchOperator" : "IS",
+            "network" : "STAGING"
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      }, {
+        "name" : "Authentication Header",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "denyAccess",
+          "options" : {
+            "reason" : "denyAuthDueHeader",
+            "enabled" : true
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "requestHeader",
+          "options" : {
+            "matchOperator" : "IS_NOT_ONE_OF",
+            "matchWildcardName" : false,
+            "matchWildcardValue" : false,
+            "matchCaseSensitiveValue" : true,
+            "headerName" : "x-uid",
+            "values" : [ "aWFsZmFyb3I=" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : ""
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : ""
+    }, {
+      "name" : "Akamaizer",
+      "children" : [ ],
+      "behaviors" : [ {
+        "name" : "advanced",
+        "options" : {
+          "description" : "Akamaizer",
+          "xml" : "<edgecomputing:processor>\n  <value>akamaizer</value>\n  <allow-akamaizer>on</allow-akamaizer>\n  <status>on</status>\n</edgecomputing:processor>\n<edgecomputing:akamaizer>\n  <tag-filter>\n    <rule>#Request Information#Akamai Details - Headers Received:#</rule>\n    <tags>h1</tags>\n    <onmatch>stop</onmatch>\n    <scope>block</scope>\n    <type>include</type>\n  </tag-filter>\n  <tag-filter>\n    <rule>#Field#Information / Field#</rule>\n    <tags>th</tags>\n    <onmatch>stop</onmatch>\n    <scope>block</scope>\n    <type>include</type>\n  </tag-filter>\n  <tag-filter>\n    <rule>#Value#Information / Value#</rule>\n    <tags>th</tags>\n    <onmatch>stop</onmatch>\n    <scope>block</scope>\n    <type>include</type>\n  </tag-filter>\n</edgecomputing:akamaizer>"
+        },
+        "uuid" : "d7b23f94-0921-4e6d-91fb-d769a8f995ac"
+      } ],
+      "uuid" : "ec146e3c-e74d-412d-9fc9-c4c540d1532e",
+      "criteria" : [ {
+        "name" : "path",
+        "options" : {
+          "matchOperator" : "MATCHES_ONE_OF",
+          "matchCaseSensitive" : false,
+          "values" : [ "/akamaizer/" ],
+          "normalize" : false
+        }
+      } ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : ""
+    }, {
+      "name" : "Caching",
+      "children" : [ ],
+      "behaviors" : [ {
+        "name" : "caching",
+        "options" : {
+          "behavior" : "MAX_AGE",
+          "mustRevalidate" : false,
+          "ttl" : "1s"
+        }
+      } ],
+      "criteria" : [ {
+        "name" : "fileExtension",
+        "options" : {
+          "matchOperator" : "IS_ONE_OF",
+          "matchCaseSensitive" : false,
+          "values" : [ "js", "css" ]
+        }
+      } ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : ""
+    } ],
+    "behaviors" : [ {
+      "name" : "origin",
+      "options" : {
+        "originType" : "CUSTOMER",
+        "forwardHostHeader" : "REQUEST_HOST_HEADER",
+        "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+        "compress" : true,
+        "enableTrueClientIp" : true,
+        "trueClientIpHeader" : "True-Client-IP",
+        "trueClientIpClientSetting" : false,
+        "verificationMode" : "CUSTOM",
+        "originSni" : true,
+        "httpPort" : 80,
+        "httpsPort" : 443,
+        "hostname" : "origin-dev.ialfaror.devops.ranet_pm",
+        "originCertificate" : "",
+        "ports" : "",
+        "customValidCnValues" : [ "{{Origin Hostname}}", "{{Forward Host Header}}" ],
+        "originCertsToHonor" : "STANDARD_CERTIFICATE_AUTHORITIES",
+        "standardCertificateAuthorities" : [ "akamai-permissive" ],
+        "ipVersion" : "IPV4"
+      }
+    } ],
+    "uuid" : "default",
+    "options" : {
+      "is_secure" : true
+    },
+    "variables" : [ {
+      "name" : "PMUSER_RANDOMORIGIN",
+      "value" : "",
+      "description" : "Select a random number for Origin Routing Logic",
+      "hidden" : false,
+      "sensitive" : false
+    } ],
+    "comments" : ""
+  },
+  "errors" : [ {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_ip4_or_ip6",
+    "errorLocation" : "#/rules/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_ip4_or_ip6",
+    "errorLocation" : "#/rules/children/3/children/0/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_ip4_or_ip6",
+    "errorLocation" : "#/rules/children/3/children/1/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_ip4_or_ip6",
+    "errorLocation" : "#/rules/children/3/children/2/children/0/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_ip4_or_ip6",
+    "errorLocation" : "#/rules/children/3/children/2/children/1/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_ip4_or_ip6",
+    "errorLocation" : "#/rules/children/3/children/2/children/2/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_ip4_or_ip6",
+    "errorLocation" : "#/rules/children/3/children/3/children/0/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/format_error.hostname_ip4_or_ip6",
+    "errorLocation" : "#/rules/children/3/children/3/children/1/behaviors/0/options/hostname",
+    "detail" : "The Origin Server Hostname option on <strong>`Origin Server`</strong> must be a properly formatted hostname or IPv4 address."
+  } ],
+  "ruleFormat" : "v2022-06-28",
+  "comments" : "pipelineCachingUpdate"
+}

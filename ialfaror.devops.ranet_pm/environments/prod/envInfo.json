@@ -13,5 +13,7 @@
         "productId": "prd_Fresca",
         "ruleFormat": "v2022-06-28"
     },
-    "suggestedRuleFormat": "v2022-06-28"
+    "suggestedRuleFormat": "v2022-06-28",
+    "environmentHash": "099f3b33bd9b6cb362ea86a6cdf72b93421eaa766b4d7ae54feb48cc596628a3",
+    "ruleTreeHash": "bb2301d2f04297cb4c39a6edefd3a11a32b2291e7794f266792eceb88caa51a8"
 }
